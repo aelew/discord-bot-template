@@ -3,6 +3,7 @@
   "author": "aelew",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow bun",
     "start": "bun run ./src/index.ts",
     "deploy": "bun run ./src/deploy.ts",
     "prettier": "prettier --write ."
