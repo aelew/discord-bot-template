@@ -7,7 +7,7 @@ const pingCommand: Command<ChatInputCommandInteraction> = {
     .setName('ping')
     .setDescription('Replies with pong!'),
   execute: async (interaction) => {
-    await interaction.reply('Pong!');
+    await interaction.reply(`${interaction.client.ws.ping}ms`);
   }
 };
 
