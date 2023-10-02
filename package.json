@@ -10,6 +10,7 @@
   "dependencies": {
     "@t3-oss/env-core": "^0.6.1",
     "discord.js": "^14.13.0",
+    "os": "^0.1.2",
     "zod": "^3.22.2"
   },
   "devDependencies": {
