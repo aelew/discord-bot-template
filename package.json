@@ -6,16 +6,16 @@
     "preinstall": "npx only-allow bun",
     "start": "bun run ./src/index.ts",
     "deploy": "bun run ./src/deploy.ts",
-    "prettier": "prettier --write ."
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "@t3-oss/env-core": "^0.7.1",
-    "discord.js": "^14.13.0",
+    "@t3-oss/env-core": "^0.8.0",
+    "discord.js": "^14.14.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
-    "bun-types": "^1.0.7",
-    "prettier": "^3.0.3"
+    "bun-types": "^1.0.25",
+    "prettier": "^3.2.4"
   }
 }
