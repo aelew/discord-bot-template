@@ -1,6 +1,6 @@
 # 📝 discord-bot-template
 
-A type-safe Discord.js v14 boilerplate built with [TypeScript](https://www.typescriptlang.org) and the [Bun](https://bun.sh) runtime.
+A type-safe Discord.js v14 boilerplate built with [TypeScript](https://www.typescriptlang.org) and [Bun](https://bun.sh).
 
 ## Features
 
@@ -31,7 +31,7 @@ cd discord-bot-template
 Install dependencies
 
 ```bash
-bun install
+bun i
 ```
 
 Set environment variables
@@ -50,14 +50,14 @@ bun run deploy
 Start the bot
 
 ```bash
-bun run start
+bun start
 ```
 
 ## Scripts
 
 ```bash
-bun run start # start the bot
-bun run format # format code
+bun start # start the bot
+bun format # format code
 bun run deploy # deploy commands (run after adding/modifying command data)
 ```
 
