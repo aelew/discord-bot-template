@@ -12,7 +12,7 @@ declare module 'discord.js' {
 }
 
 export interface Command<T extends BaseInteraction> {
-  data: Pick<SlashCommandBuilder, 'name', 'toJSON'>;
+  data: Pick<SlashCommandBuilder, 'name' | 'toJSON'>;
   execute: (interaction: T) => Promise<void>;
 }
 
