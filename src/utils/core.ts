@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import type { Interaction } from 'discord.js';
+import fs from 'node:fs';
+import path from 'node:path';
+import type { ClientEvents, Interaction } from 'discord.js';
 
 import type { Command, Event } from '../types';
 
@@ -25,7 +25,7 @@ export function getEvents() {
       .filter((f) => f.endsWith('.ts'))
       .map(async (f) => {
         const module = await import(path.join(eventsPath, f));
-        return module.default as Event<any>;
+        return module.default as Event<keyof ClientEvents>;
       })
   );
 }

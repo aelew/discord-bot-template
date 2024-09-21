@@ -1,11 +1,11 @@
 import {
-  ChatInputCommandInteraction,
-  GuildTextBasedChannel,
+  type GuildTextBasedChannel,
+  type ChatInputCommandInteraction,
   PermissionFlagsBits,
   SlashCommandBuilder
 } from 'discord.js';
 
-import { Command } from '../types';
+import type { Command } from '../types';
 
 const purgeCommand: Command<ChatInputCommandInteraction> = {
   data: new SlashCommandBuilder()
