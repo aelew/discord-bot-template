@@ -6,7 +6,8 @@
     "preinstall": "npx only-allow bun",
     "start": "bun run ./src/index.ts",
     "deploy": "bun run ./src/deploy.ts",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "lint": "biome lint"
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.11.1",

@@ -57,7 +57,8 @@ bun start
 
 ```bash
 bun start # start the bot
-bun format # format code
+bun lint # run biome linter
+bun format # run biome formatter
 bun run deploy # deploy commands (run after adding/modifying command data)
 ```
 
