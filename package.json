@@ -6,7 +6,7 @@
     "preinstall": "npx only-allow bun",
     "start": "bun run ./src/index.ts",
     "deploy": "bun run ./src/deploy.ts",
-    "format": "prettier --write ."
+    "format": "biome format --write ."
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.11.1",
@@ -14,8 +14,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
-    "bun-types": "^1.1.29",
-    "prettier": "^3.3.3"
+    "@biomejs/biome": "1.9.2",
+    "bun-types": "^1.1.29"
   }
 }

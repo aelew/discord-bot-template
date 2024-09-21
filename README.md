@@ -8,7 +8,7 @@ A type-safe Discord.js v14 boilerplate built with [TypeScript](https://www.types
 - Type-safe environment variable validation with [t3-env](https://env.t3.gg)
 - Example `/ping` and `/purge` commands
 - Command and event handlers
-- Prettier integration
+- [Biome](https://biomejs.dev) integration
 
 ## Contributions
 
