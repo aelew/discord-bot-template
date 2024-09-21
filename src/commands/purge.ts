@@ -2,7 +2,8 @@ import {
   type GuildTextBasedChannel,
   type ChatInputCommandInteraction,
   PermissionFlagsBits,
-  SlashCommandBuilder
+  SlashCommandBuilder,
+  InteractionContextType
 } from 'discord.js';
 
 import type { Command } from '../types';
@@ -10,7 +11,9 @@ import type { Command } from '../types';
 const purgeCommand: Command<ChatInputCommandInteraction> = {
   data: new SlashCommandBuilder()
     .setName('purge')
-    .setDMPermission(false)
+    .setDescription('Purges messages from the channel.')
+    .setContexts(InteractionContextType.Guild)
+    .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
     .addIntegerOption((option) =>
       option
         .setName('amount')
@@ -18,9 +21,7 @@ const purgeCommand: Command<ChatInputCommandInteraction> = {
         .setRequired(true)
         .setMinValue(1)
         .setMaxValue(100)
-    )
-    .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
-    .setDescription('Purges messages from the channel.'),
+    ),
   execute: async (interaction) => {
     if (!interaction.channel?.isTextBased) {
       await interaction.reply(
